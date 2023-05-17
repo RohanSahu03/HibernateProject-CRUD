@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 1.1//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-1.1.dtd">
+
+<hibernate-mapping>
+   <class name = "org.jsp.HibernateDemoMaven.User" table = "user">
+      
+      
+      <id name = "id" type = "int" column = "id">
+         <generator class="identity"/>
+      </id>
+      
+      <property name = "name" column = "name" />
+     
+      <property name = "age" column = "age" />
+       <property name = "phone" column = "phone" />
+      
+   </class>
+</hibernate-mapping>
